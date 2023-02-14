@@ -12,11 +12,12 @@ iverilog blinky_led.v blinky_led_tb.v -o led
 ### Data types
 
 **Possible values:**
-    - `0` - false, low
-    - `1` - true, high
-    - `x` - unknown value (can be `0` or `1`)
-    - `Z` - high impendance state, not `0` or `1`, but allows small current to flow through
+- `0` - false, low
+- `1` - true, high
+- `x` - unknown value (can be `0` or `1`)
+- `Z` - high impendance state, not `0` or `1`, but allows small current to flow through
 
+**Data types**
 - `wire` - cannot store value on it's own, is used to connect different modules (pieces of hardware), similar to realelectrical wire
 - `reg` - similar to hardware registers, holds value between assingments, used as a variable
 - `integer` - 32-bit integer
