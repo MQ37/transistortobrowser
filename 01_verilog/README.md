@@ -2,6 +2,13 @@
 
 Verilog is language for hardware description (HDL), you can describe any hardware you want.
 
+### How to run
+
+Compile verilog files using `iverilog` then run output file. For example for `blinky_led.v` with testbench `blinky_led_tb.v` use following command and run the `led` output file.
+```
+iverilog blinky_led.v blinky_led_tb.v -o led
+```
+
 ### Data types
 
 **Possible values:**
