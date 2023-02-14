@@ -4,5 +4,6 @@ From understanding basic hardware stuff to web browser. Based on [geohot/fromthe
 
 **Materials:**
 - [nand2tetris](https://www.nand2tetris.org/)
+- [Ben Eater 8-bit computer](https://eater.net/8bit)
 - **UART**
     - [Understanding UART (YTB)](https://www.youtube.com/watch?v=sTHckUyxwp8)
