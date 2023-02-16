@@ -115,3 +115,43 @@ module vector;
 
 endmodule
 ```
+
+### Sleep
+
+You can delay statements in verilog using `#N`, where N is number of time units to sleep defined using `timescale time_unit/precision`.
+
+```
+`timescale 1ns/1ns
+
+...
+
+initial begin
+
+    $display ("Time now is %0t", $realtime);
+    /* sleep for 20ns */
+    #20
+    $display ("Time now is %0t", $realtime);
+end
+```
+
+### Events
+
+To react to some event, for example clocks rising or falling edge, you can use `always` block. Statements inside the block are executed sequentially on event.
+
+```
+`timescale 1ns/1ns
+
+...
+
+reg clk = 0;
+
+/* make clock tick/change value each 1ns (time_unit) */
+always #1 clk = !clk;
+
+/* Execute block on rising edge of clk */
+always @ (posedge clk) begin
+    $display ("Clock is %b at %0t", clk, $realtime);
+end
+
+...
+```
