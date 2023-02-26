@@ -17,3 +17,5 @@ From understanding basic hardware stuff to web browser. Based on [geohot/fromthe
 - **ARM ASM**
     - [Azeria Labs ARM ASM guide](https://azeria-labs.com/writing-arm-assembly-part-1/)
     - [Texas Instruments GNU ARM ASM reference guide](https://software-dl.ti.com/codegen/docs/tiarmclang/compiler_tools_user_guide/gnu_syntax_arm_asm_language/index.html)
+- **Processor**
+    - [RISC-V in Python, Verilog and on FPGA (geohot) YTB](https://www.youtube.com/watch?v=camQ9QeBY9Q)
